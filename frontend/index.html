@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AI Image Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>
+        <i class="fa-solid fa-shield"></i>
+        AI Detector
+    </h2>
+
+    <ul>
+
+        <li><i class="fa-solid fa-house"></i> Home</li>
+
+        <li><i class="fa-solid fa-image"></i> Image Analysis</li>
+
+        <li><i class="fa-solid fa-clock"></i> History</li>
+
+        <li><i class="fa-solid fa-chart-simple"></i> Statistics</li>
+
+        <li><i class="fa-solid fa-gear"></i> Settings</li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <div class="header">
+
+        <i class="fa-solid fa-camera-retro icon"></i>
+
+        <h1>AI IMAGE DETECTOR</h1>
+
+        <p>
+            Detect AI Generated Images
+            using Advanced AI Technology
+        </p>
+
+    </div>
+
+    <div class="upload-box">
+
+        <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+
+        <h2>Upload Your Image</h2>
+
+        <input
+        type="file"
+        id="imageInput">
+
+        <img id="preview">
+
+        <button onclick="detectImage()">
+            Analyze Image
+        </button>
+
+    </div>
+
+    <div class="result-box">
+
+        <h2>Analysis Result</h2>
+
+        <h1 id="result">
+            Waiting for analysis...
+        </h1>
+
+        <div class="stats">
+
+            <div class="card">
+
+                <i class="fa-solid fa-brain"></i>
+
+                <h3>AI Probability</h3>
+
+                <p id="probability">
+                    0%
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-fingerprint"></i>
+
+                <h3>Authenticity</h3>
+
+                <p>
+                    Medium
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                <h3>Manipulation</h3>
+
+                <p>
+                    Possible
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="chat-box">
+
+        <h2>
+            Ask AI About This Image
+        </h2>
+
+        <input
+        type="text"
+        placeholder="Ask something...">
+
+        <button>
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
